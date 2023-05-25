@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="preloader">
+        <div class="cloud front">
+            <span class="left-front"></span>
+            <span class="right-front"></span>
+          </div>
+          <span class="sun sunshine"></span>
+          <span class="sun"></span>
+          <div class="cloud back">
+            <span class="left-back"></span>
+            <span class="right-back"></span>
+          </div>
+    </div>
+        <form>
+            <input type="text" id="city" name="city" placeholder="Location search">
+            
+        </form>
+        
+        <div class="local">
+                
+            <div id="my-image-wrapper2"></div>
+            <p class="package-name" contenteditable="true"></p>
+            <img src="" alt="" class="weather-image">
+            <div id="my-image-wrapper"></div>
+            <p class="price1"></p>
+                
+        </div>
+        
+        <div class="price">
+            <p class="data"></p>
+            <p class="dayy"></p>
+        </div>
+        <div class="weather">
+          <span class="pr">
+            <p class="pr1"></p>
+            <p class="pr2"></p>
+          </span>
+          <span class="hum">
+            <p class="hum1"></p>
+            <p class="hum2"></p>
+          </span>
+          <span class="win">
+            <p class="win1"></p>
+            <p class="win2"></p>
+          </span>
+        </div>
+        <div class="forecast-container">
+        </div>
+    
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.querySelector('.preloader').style.display = 'none';
+    document.querySelector('input').style.display = 'block';
+  }, 3000);
+});
+    </script>
+</body>
+</html>
